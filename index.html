@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Game</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bodyWrapper">
+        <img class="box box-1" src="christmas-gift.png" alt="">
+        <img class="box box-2" src="coffee-glass.png" alt="">
+        <img class="box box-3" src="crypto-camera.png" alt="">
+        <img class="box box-4" src="launch.png" alt="">
+        <img class="box box-5" src="coffee-mug.png" alt="">
+        <img class="box box-6" src="squigly-globe.png" alt="">
+        <img class="box box-7" src="christmas-tree.png" alt="">
+
+        <header>
+            <span class="logoImage">
+                <img src="ethereum-plant.png" alt="logo">
+            </span>
+            <div class="headerLogo">
+                <p>Word Game</p>
+            </div>
+        </header>
+        <main>
+            <section class="mainSection" id="sectionOne">
+                <!-- section header -->
+                <div class="sectionHeader">
+                    <div class="sectionHeading">
+                        <p>Correct</p>
+                        <p id="correct">0</p>
+                    </div>
+                </div>
+                <!-- section main -->
+                <div class="sectionMain" id="correctSection">
+                </div>
+            </section>
+
+            <section class="mainSection" id="sectionTwo">
+                <!-- section header -->
+                <div class="sectionHeader">
+                    <div class="sectionHeading">
+                        <p>New Words</p>
+                    </div>
+                </div>
+                <!-- section main -->
+                <div class="sectionMain sectionTwo">
+                    <span class="word" id="newWord"></span>
+                </div>
+            </section>
+
+            <section class="mainSection" id="sectionThree">
+                <!-- section header -->
+                <div class="sectionHeader">
+                    <div class="sectionHeading">
+                        <p>Wrong</p>
+                        <p id="wrong">0</p>
+                    </div>
+                </div>
+                <!-- section main -->
+                <div class="sectionMain" id="WrongSection">
+                   
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="menu">
+                <div class="menuWrapper">
+                    <input id="wordInput" type="text" placeholder="Type The Word" onchange="check()">
+                </div>
+            </div>
+            <div class="devInfo">
+                <div class="devInfoHeader">
+                    <p class="devInfoHeading">Designed and Developed by -</p>
+                    <h3 class="devInfoName">Prashant Roundal</h3>
+                </div>
+                <div class="devInfoMain">
+                    <ul class="socialLinks">
+                       <a id="linkedIn" href="https://www.linkedin.com/in/muskan-khandekar-308321188" target="_blank"> <li class="myLink"><img src="linkedin.png" alt=""></li><span class="detailAboutLink" id="detailAboutLinkLL">LinkedIn</span></a>
+                        <a id="github" href="https://github.com/Muskanvk12" target="_blank"><li class="myLink"><img src="github.png" alt=""></li><span class="detailAboutLink" id="detailAboutLinkGG">Github</span></a>
+                        <a id="projects" href="" target="_blank"><li class="myLink"><img src="projects.png" alt=""></li><span class="detailAboutLink" id="detailAboutLinkP">My Projects</span></a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
